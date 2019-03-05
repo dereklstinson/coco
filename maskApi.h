@@ -4,9 +4,8 @@
 * Code written by Piotr Dollar and Tsung-Yi Lin, 2015.
 * Licensed under the Simplified BSD License [see coco/license.txt]
 **************************************************************************/
-//#pragma once
-#include <math.h>
-#include <stdlib.h>
+#pragma once
+
 typedef unsigned int uint;
 typedef unsigned long siz;
 typedef unsigned char byte;

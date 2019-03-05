@@ -5,10 +5,13 @@
 * Licensed under the Simplified BSD License [see coco/license.txt]
 **************************************************************************/
 #include "maskApi.h"
-
+#include <math.h>
+#include <stdlib.h>
 
 uint umin( uint a, uint b ) { return (a<b) ? a : b; }
 uint umax( uint a, uint b ) { return (a>b) ? a : b; }
+double fmin (double a, double b){return (a<b) ? a:b;}
+double fmax (double a, double b){return (a>b) ? a:b;}
 
 void rleInit( RLE *R, siz h, siz w, siz m, uint *cnts ) {
   R->h=h; R->w=w; R->m=m; R->cnts=(m==0)?0:malloc(sizeof(uint)*m);
